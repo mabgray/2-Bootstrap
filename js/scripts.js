@@ -4,6 +4,7 @@ $(function() {
     $("#carouselButton").click(function(){
         if ($("#carouselButton").children("i").hasClass("fa-pause")) {
             $(".carousel").carousel("pause");
+            console.log("hello");
             $("#carouselButton").children("i").removeClass("fa-pause");
             $("#carouselButton").children("i").addClass("fa-play");
         } else {
@@ -13,4 +14,18 @@ $(function() {
         }
     });
 });
+
+ $("#reserveButton").click(function () {
+    $("#reserveModal").modal("show");
+
+});
+
+$("#loginButton").click(function () {
+    $("#loginModal").modal("show");
+
+}); 
+
+ 
+
+
 });

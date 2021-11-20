@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "lite": "lite-server",
+    "imagemin": "imagemin img/* -o dist/img",
     "clean": "rimraf dist",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "scss": "node-sass -o css/ css/",
@@ -24,7 +25,8 @@
     "node-sass": "^4.14.1",
     "onchange": "^7.0.0",
     "parallelshell": "3.0.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
